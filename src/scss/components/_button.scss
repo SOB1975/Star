@@ -1,0 +1,107 @@
+.btn {
+  display: inline-block;
+  color: $black;
+  font-family: inherit;
+  line-height: 0;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #f2f2f2 20%, #ededed 10%, #e2e2e2 70%);
+  // background-color: red;
+  cursor: pointer;
+  border-bottom: .1rem solid #a8a8a8;
+  border-right: .1rem solid #ccc;
+  border-left: .1rem solid #ccc;
+  border-top: .1rem solid #e5e5e5;
+
+
+  &:hover {
+    color: #148003;
+  }
+}
+
+.btn--small {
+  font-size: 1.6rem;
+  padding: 1.5rem 5rem;
+  border-radius: 1.5rem;
+}
+
+.btn--normal {
+  font-size: 1.8rem;
+  padding: 2rem 6rem;
+  border-radius: 4rem;
+}
+
+.btn--big {
+  font-size: 2rem;
+  padding: 3rem 7rem;
+  border-radius: 4rem;
+}
+
+.button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: $bg-button-box;
+  padding: 2rem 1rem;
+}
+
+.button-prev,
+.button-next {
+  cursor: pointer;
+  color: $white;
+  border: none;
+  font-size: 1.6rem;
+
+  border-radius: 3rem;
+  background: linear-gradient(to top, $gd-btn-bottom-dark-gray 1%, $gd-btn-bottom-light-gray 2%, $gd-btn-medium-gray 3%, $gd-btn-medium-light-gray 4%, $gd-btn-up-dark-gray 5%, $gd-btn-up-medium-gray 5%, $gd-btn-up-gray 80%);
+
+  &:hover {
+    background: #9DD005;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem 3rem 1rem 6rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 3.2rem;
+    height: 5rem;
+    position: absolute;
+    top: -40%;
+    left: 16%;
+    transform: rotate(180deg);
+    background-image: url('../img/svg/next_arrow.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem 6rem 1rem 3rem;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 3.2rem;
+    height: 5rem;
+    position: absolute;
+    top: 10%;
+    right: 16%;
+    // transform: translate(50%, -50%);
+    background-image: url('../img/svg/next_arrow.svg');
+    background-repeat: no-repeat;
+  }
+}

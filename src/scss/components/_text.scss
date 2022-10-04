@@ -1,0 +1,46 @@
+.txt {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.4rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.title--mb {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.subtitle--mb {
+  margin-bottom: 2rem;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: $black;
+  font-weight: 700;
+  display: block;
+  padding: 2rem 0;
+
+  &:hover {
+    color: #148003;
+  }
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+.hr--mt {
+  margin-top: 2rem;
+}

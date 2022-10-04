@@ -1,0 +1,20 @@
+.info {
+  &__title {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+
+  &__ulist {
+    list-style: disc;
+    margin-left: 2rem;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__olist {
+    list-style: decimal;
+  }
+}

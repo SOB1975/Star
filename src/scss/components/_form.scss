@@ -1,0 +1,187 @@
+.form {
+
+  @media (max-width: 850px) {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 850px) {
+      width: 20rem;
+      display: block;
+      // flex-wrap: wrap;
+      // flex-direction: column;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+
+  &__row--birthday {
+    justify-content: flex-start;
+
+    @media (max-width: 850px) {
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  &__row--family {
+    @media(max-width: 850px) {
+      display: flex;
+      flex-direction: column;
+      min-width: 50%;
+    }
+
+  }
+
+  &__row--snp {
+    @media(max-width: 850px) {
+      display: block;
+      min-width: 50%;
+    }
+  }
+
+  &__row--birth {
+    @media (max-width: 850px) {
+      width: 100%;
+    }
+  }
+
+  &__row--button-box {
+    width: 100%;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 850px) {
+      width: 100%;
+    }
+  }
+
+  &__snp {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+
+  &__surname {
+    width: 20rem;
+
+    @media (max-width: 550px) {
+      // display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__name {
+    width: 20rem;
+
+    @media (max-width: 550px) {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__patron {
+    width: 30rem;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+
+  &__radio-box {
+    display: flex;
+  }
+}
+
+.radio {
+  width: 20rem;
+  margin-right: 4rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 850px) {
+    display: inline-block;
+    width: 15rem;
+  }
+
+  &__fake {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    opacity: 0;
+  }
+
+  &__fake:checked+&__true {
+    border-bottom: none;
+    background: $bg-btn;
+    padding: 0.5rem .7rem;
+    border-radius: .5rem;
+    color: $white;
+  }
+
+  &__true {
+    font-size: 1.6rem;
+    border-bottom: .1rem dotted $black;
+    cursor: pointer;
+  }
+
+}
+
+.title-sm {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+  @media (max-width: 450px) {
+    font-size: 1.8rem;
+  }
+}
+
+.select-box {
+  &__select {
+    width: 30rem;
+  }
+}
+
+
+.country {
+  flex: 0 0 20rem;
+}
+
+.country select {
+  width: 20rem;
+}
+
+.location {
+  width: 100%;
+
+  &__place {
+    width: 100%;
+  }
+
+  &__example {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    color: $cl-subtext;
+  }
+}

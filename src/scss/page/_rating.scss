@@ -1,0 +1,36 @@
+.stars-box {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.checkbox {
+  cursor: pointer;
+
+  &:hover &__fake svg {
+    fill: rgba(orange, .5);
+  }
+
+  &__true {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    opacity: 0;
+  }
+
+  &__true:checked+&__fake svg {
+    fill: orange;
+  }
+
+
+
+  &__fake {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  &__fake svg {
+    width: 4.8rem;
+    height: 4.8rem;
+    fill: #ccc;
+  }
+}
