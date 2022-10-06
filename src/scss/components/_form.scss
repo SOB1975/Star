@@ -34,6 +34,10 @@
       width: 100%;
       display: flex;
     }
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
   }
 
   &__row--family {
@@ -123,6 +127,10 @@
     width: 15rem;
   }
 
+  @media (max-width: 450px) {
+    width: 50%;
+  }
+
   &__fake {
     position: absolute;
     width: 0.1rem;
@@ -160,17 +168,31 @@
 .select-box {
   &__select {
     width: 30rem;
+
+    @media (max-width: 450px) {
+      width: 100%;
+    }
   }
 }
 
 
 .country {
   flex: 0 0 20rem;
+
+  &__citizenship {
+    @media(max-width:450px) {
+      width: 100%;
+    }
+  }
+
+  @media(max-width:450px) {
+    flex: 0 0 100%;
+  }
 }
 
-.country select {
-  width: 20rem;
-}
+// .country select {
+//   width: 20rem;
+// }
 
 .location {
   width: 100%;

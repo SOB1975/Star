@@ -18,6 +18,12 @@
   }
 }
 
+// .header body {
+//   @media (max-width: 450px) {
+//     overflow: hidden;
+//   }
+// }
+
 
 .menu {
   flex: 0 1 78.4rem;
@@ -32,6 +38,9 @@
     width: 100vw;
     height: 100vh;
     margin-top: 8rem;
+    transform: translateX(-100%);
+    overflow: hidden;
+    z-index: 1;
     // background: #777777;
     // border-top: 1px solid #000;
     // flex-direction: column;
@@ -105,6 +114,7 @@
   }
 }
 
+
 .menu-burger {
   display: none;
   position: absolute;
@@ -167,4 +177,12 @@
 
 .menu.active {
   display: block;
+  transform: translateX(0%);
+  z-index: 9999;
 }
+
+// html {
+//   @media (max-width: 450px) {
+//     overflow: hidden;
+//   }
+// }
