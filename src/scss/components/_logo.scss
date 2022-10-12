@@ -1,0 +1,60 @@
+.logo {
+  width: 14rem;
+  position: relative;
+
+  &__title-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+
+  &__char {
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(41, 38, 38, 0.842);
+    transform: rotate(-40deg);
+  }
+
+  &__box {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__item,
+  &__item-1,
+  &__item-2,
+  &__item-3 {
+    border-radius: 1rem;
+    background: linear-gradient(#fff, blue, red);
+    border: .1rem solid rgb(39, 37, 37);
+
+  }
+
+  &__item {
+    width: 1rem;
+    height: 4rem;
+    background-color: #000;
+  }
+
+  &__item-1 {
+    width: 1rem;
+    height: 5rem;
+    background-color: #000;
+  }
+
+  &__item-2 {
+    width: 1rem;
+    height: 6rem;
+    background-color: #000;
+  }
+
+  &__item-3 {
+    width: 1rem;
+    height: 7rem;
+
+  }
+}
