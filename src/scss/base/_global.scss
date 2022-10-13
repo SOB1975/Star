@@ -7,7 +7,11 @@ html {
   font-family: 'Poppins', sans-serif;
   height: 100%;
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow: hidden;
+
+  @media (max-width: 1054px) {
+    overflow: auto;
+  }
 
   &::-webkit-scrollbar {
     width: 1rem;
@@ -113,6 +117,7 @@ a {
   margin: 0 auto;
 
   @media (max-width: 1054px) {
-    max-width: 78.4rem;
+    // max-width: 78.4rem;
+    width: 100%;
   }
 }

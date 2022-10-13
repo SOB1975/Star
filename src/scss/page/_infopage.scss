@@ -6,7 +6,11 @@
 
     @media (max-width: 1054px) {
       flex-wrap: wrap;
-      margin-top: 2rem;
+      // margin-top: 12rem;
+    }
+
+    @media (max-width: 450px) {
+      margin-top: 3rem;
     }
   }
 
